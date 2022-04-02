@@ -10,6 +10,8 @@ public class FirstJavaClass{
         System.out.println(BrakeCamelCase.camelCase("testStringThreeWords"));
         System.out.println(VowelCount.getCount("hello"));
         System.out.println(VowelCount.getCountOptimized("hello"));
+        System.out.println(FindTheOddInt.findIt(new int[]{20,1,-1,2,-2,3,3,5,5,1,2,4,20,4,-1,-2,5}));
+
 
     }
 }
