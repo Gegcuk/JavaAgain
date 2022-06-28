@@ -1,6 +1,8 @@
 import java.util.Arrays;
 import java.util.Collections;
 
+import static java.util.stream.IntStream.of;
+
 public class MissingInArithmeticProgression {
     public static void main(String[] args) {
         findMissing(new int[]{ 1, 3, 4});
@@ -9,6 +11,7 @@ public class MissingInArithmeticProgression {
         findMissing(new int[]{ 4, 3, 1});
         findMissing(new int[]{ 4, 2, 1});
         findMissing(new int[]{ 1, 1, 1});
+        findMissingOptimised(new int[]{ 4, 3, 1});
     }
 
     public static int findMissing(int[] numbers)
@@ -47,5 +50,10 @@ public class MissingInArithmeticProgression {
         }
 
         return numbers[0];
+    }
+
+    public static int findMissingOptimised(int[] numbers){
+        System.out.println(of(numbers).sum());
+        return (numbers[0] + numbers[numbers.length - 1]) * (numbers.length + 1)/2 - of(numbers).sum();
     }
 }
