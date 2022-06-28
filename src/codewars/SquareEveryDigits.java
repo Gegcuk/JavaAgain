@@ -1,14 +1,12 @@
 package codewars;
 
-import javax.swing.*;
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.stream.Stream;
+import java.util.stream.Collectors;
 
 public class SquareEveryDigits {
 
     public static void main(String[] args) {
-        squareDigits(9119);
+        System.out.println(squareDigitsOptimized(9119));
     }
 
     public static int squareDigits(int n) {
@@ -29,7 +27,12 @@ public class SquareEveryDigits {
     }
 
     public static int squareDigitsOptimized(int n){
-        return 0;
+        return Integer.parseInt(String.valueOf(n)
+                .chars()
+                .map(i -> Integer.parseInt(String.valueOf((char) i)))
+                .map(i -> i*i)
+                .mapToObj(String::valueOf)
+                .collect(Collectors.joining("")));
     }
 
 }
