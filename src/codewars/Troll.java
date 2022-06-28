@@ -1,4 +1,4 @@
-
+package codewars;
 /*
 Trolls are attacking your comment section!
 
