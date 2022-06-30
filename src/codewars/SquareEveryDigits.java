@@ -21,7 +21,6 @@ public class SquareEveryDigits {
              ) {resString.append(x);
 
         }
-
         return Integer.parseInt(resString.toString());
     }
 
@@ -33,5 +32,4 @@ public class SquareEveryDigits {
                 .mapToObj(String::valueOf)
                 .collect(Collectors.joining("")));
     }
-
 }
