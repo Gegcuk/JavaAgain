@@ -8,8 +8,8 @@ public class SleepIn {
 
     public static void main(String[] args) {
         System.out.println(sleepIn(false, false));
-        sleepIn(true, false);
-        sleepIn(false, true);
+        System.out.println(sleepIn(true, false));
+        System.out.println(sleepIn(false, true));
     }
 
 }
