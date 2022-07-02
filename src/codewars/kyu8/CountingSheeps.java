@@ -1,4 +1,4 @@
-package codewars;
+package codewars.kyu8;
 
 public class CountingSheeps {
 

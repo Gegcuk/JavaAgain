@@ -1,4 +1,4 @@
-package codewars;
+package codewars.kyu7;
 /*
 Trolls are attacking your comment section!
 
